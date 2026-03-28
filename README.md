@@ -2,6 +2,10 @@
 
 Full-stack Flipkart-inspired ecommerce application built with React, Express, Prisma, and Neon Postgres.
 
+Live app:
+
+- Frontend: [https://flipkart-clone-pink-pi.vercel.app/](https://flipkart-clone-pink-pi.vercel.app/)
+
 ## Stack
 
 - Frontend: React + Vite
