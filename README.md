@@ -1,4 +1,4 @@
-# Flipkart Clone Assignment
+# Flipkart Clone 
 
 Full-stack Flipkart-inspired ecommerce application built with React, Express, Prisma, and Neon Postgres.
 
