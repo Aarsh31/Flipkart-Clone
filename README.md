@@ -61,6 +61,7 @@ Required database/app values:
 - `DIRECT_URL`
 - `PORT`
 - `CLIENT_URL`
+- `ALLOWED_ORIGINS`
 - `DEFAULT_USER_EMAIL`
 - `JWT_SECRET`
 

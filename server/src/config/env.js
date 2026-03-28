@@ -7,6 +7,16 @@ const env = {
   databaseUrl: process.env.DATABASE_URL,
   directUrl: process.env.DIRECT_URL,
   clientUrl: process.env.CLIENT_URL || "http://localhost:5173",
+  allowedOrigins: (
+    process.env.ALLOWED_ORIGINS ||
+    [
+      process.env.CLIENT_URL || "http://localhost:5173",
+      "https://flipkart-clone-3-3a18.onrender.com",
+    ].join(",")
+  )
+    .split(",")
+    .map((origin) => origin.trim())
+    .filter(Boolean),
   defaultUserEmail: process.env.DEFAULT_USER_EMAIL || "demo@flipkartclone.local",
   jwtSecret: process.env.JWT_SECRET || "flipkart-clone-dev-secret",
   mailFrom: process.env.MAIL_FROM || "Flipkart Clone <no-reply@flipkartclone.local>",
