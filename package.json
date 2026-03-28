@@ -1,0 +1,19 @@
+{
+  "name": "project-flipkart",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix client",
+    "dev": "powershell -ExecutionPolicy Bypass -File .\\scripts\\dev.ps1",
+    "build": "npm run build --prefix client",
+    "server:start": "npm run start --prefix server",
+    "client:dev": "npm run dev --prefix client",
+    "server:dev": "node .\\server\\src\\server.js",
+    "db:generate": "npm run prisma:generate --prefix server",
+    "db:push": "npm run prisma:push --prefix server",
+    "db:seed": "npm run prisma:seed --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

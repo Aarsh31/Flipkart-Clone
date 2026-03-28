@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#EEF4FF"/>
+  <rect x="270" y="98" width="260" height="604" rx="44" fill="#334155"/>
+  <rect x="288" y="118" width="224" height="564" rx="32" fill="url(#a)"/>
+  <circle cx="400" cy="160" r="10" fill="#0F172A"/>
+  <circle cx="340" cy="228" r="24" fill="#BFDBFE"/>
+  <circle cx="400" cy="228" r="24" fill="#93C5FD"/>
+  <circle cx="460" cy="228" r="24" fill="#60A5FA"/>
+  <text x="400" y="744" text-anchor="middle" fill="#1E293B" font-size="38" font-family="Arial" font-weight="700">Samsung Galaxy S24</text>
+  <defs>
+    <linearGradient id="a" x1="288" y1="118" x2="512" y2="682" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DBEAFE"/>
+      <stop offset="1" stop-color="#93C5FD"/>
+    </linearGradient>
+  </defs>
+</svg>

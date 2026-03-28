@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#09090B"/>
+  <rect x="166" y="158" width="468" height="300" rx="24" fill="#27272A"/>
+  <rect x="192" y="184" width="416" height="248" rx="14" fill="url(#a)"/>
+  <path d="M124 506H676L590 594H210L124 506Z" fill="#3F3F46"/>
+  <path d="M258 538H542" stroke="#A1A1AA" stroke-width="18" stroke-linecap="round"/>
+  <path d="M230 384L310 292L374 336L450 252L570 382" stroke="#22C55E" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="292" cy="252" r="28" fill="#F43F5E"/>
+  <text x="400" y="658" text-anchor="middle" fill="#FAFAFA" font-size="38" font-family="Arial" font-weight="700">HP Victus Gaming</text>
+  <defs>
+    <linearGradient id="a" x1="192" y1="184" x2="608" y2="432" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172554"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+</svg>

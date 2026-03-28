@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#F8FAFC"/>
+  <rect x="270" y="116" width="260" height="560" rx="18" fill="#CBD5E1"/>
+  <rect x="286" y="132" width="228" height="262" rx="12" fill="#E2E8F0"/>
+  <rect x="286" y="404" width="228" height="256" rx="12" fill="#D5DEE8"/>
+  <path d="M286 394H514" stroke="#94A3B8" stroke-width="8"/>
+  <rect x="472" y="214" width="10" height="76" rx="5" fill="#64748B"/>
+  <rect x="472" y="486" width="10" height="94" rx="5" fill="#64748B"/>
+  <text x="400" y="736" text-anchor="middle" fill="#334155" font-size="34" font-family="Arial" font-weight="700">LG 260L Refrigerator</text>
+</svg>

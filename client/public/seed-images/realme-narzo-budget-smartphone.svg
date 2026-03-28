@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#FFFBEA"/>
+  <rect x="272" y="102" width="256" height="596" rx="42" fill="#1F2937"/>
+  <rect x="290" y="122" width="220" height="556" rx="30" fill="url(#a)"/>
+  <path d="M400 122V678" stroke="#FEF3C7" stroke-opacity=".65" stroke-width="4"/>
+  <circle cx="400" cy="160" r="10" fill="#111827"/>
+  <rect x="328" y="214" width="144" height="144" rx="24" fill="#93C5FD"/>
+  <text x="400" y="744" text-anchor="middle" fill="#92400E" font-size="34" font-family="Arial" font-weight="700">realme Narzo</text>
+  <defs>
+    <linearGradient id="a" x1="290" y1="122" x2="510" y2="678" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FEF3C7"/>
+      <stop offset="1" stop-color="#FDE68A"/>
+    </linearGradient>
+  </defs>
+</svg>

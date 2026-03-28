@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#F8FAFC"/>
+  <path d="M282 184L210 262L258 350L320 310V642H480V310L542 350L590 262L518 184L446 236L400 192L354 236L282 184Z" fill="#60A5FA"/>
+  <path d="M356 236L400 282L444 236L426 194H374L356 236Z" fill="#DBEAFE"/>
+  <path d="M400 282V642" stroke="#BFDBFE" stroke-width="10"/>
+  <circle cx="400" cy="378" r="8" fill="#E0F2FE"/>
+  <circle cx="400" cy="438" r="8" fill="#E0F2FE"/>
+  <circle cx="400" cy="498" r="8" fill="#E0F2FE"/>
+  <text x="400" y="724" text-anchor="middle" fill="#1E3A8A" font-size="36" font-family="Arial" font-weight="700">Slim Fit Casual Shirt</text>
+</svg>
