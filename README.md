@@ -53,6 +53,7 @@ scripts/  Root helper scripts
 ## Environment
 
 Backend config lives in [server/.env](D:/Project-Flipkart/server/.env).
+Frontend config lives in [client/.env](D:/Project-Flipkart/client/.env).
 
 Required database/app values:
 
@@ -73,6 +74,11 @@ Optional email values:
 
 If SMTP values are not configured, the app falls back to a non-SMTP preview transport so order-email generation still works safely during development.
 
+Frontend values:
+
+- `VITE_API_PROXY_TARGET`
+  Example: `http://localhost:4000`
+
 ## Setup
 
 From the project root:
@@ -80,6 +86,14 @@ From the project root:
 ```bash
 npm install
 npm run setup
+```
+
+Create env files from the examples before running:
+
+```bash
+copy .env.example .env
+copy server\.env.example server\.env
+copy client\.env.example client\.env
 ```
 
 Then prepare the database:
