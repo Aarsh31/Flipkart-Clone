@@ -1,9 +1,11 @@
 import axios from 'axios';
 
 const AUTH_STORAGE_KEY = 'flipkart_clone_auth';
+const rawApiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+const normalizedApiBaseUrl = rawApiBaseUrl?.replace(/\/+$/, '');
 
 export const api = axios.create({
-  baseURL: '/api',
+  baseURL: normalizedApiBaseUrl ? `${normalizedApiBaseUrl}/api` : '/api',
 });
 
 api.interceptors.request.use((config) => {

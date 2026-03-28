@@ -77,6 +77,8 @@ If SMTP values are not configured, the app falls back to a non-SMTP preview tran
 
 Frontend values:
 
+- `VITE_API_BASE_URL`
+  Example: `https://your-backend-service.onrender.com`
 - `VITE_API_PROXY_TARGET`
   Example: `http://localhost:4000`
 
