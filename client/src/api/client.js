@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const AUTH_STORAGE_KEY = 'flipkart_clone_auth';
-const rawApiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+const rawApiBaseUrl = import.meta.env.DEV ? '' : import.meta.env.VITE_API_BASE_URL;
 const normalizedApiBaseUrl = rawApiBaseUrl?.replace(/\/+$/, '');
 
 export const api = axios.create({

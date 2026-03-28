@@ -7,6 +7,9 @@ const createTransport = () => {
       host: env.smtpHost,
       port: env.smtpPort,
       secure: env.smtpPort === 465,
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 15000,
       auth: {
         user: env.smtpUser,
         pass: env.smtpPass,
@@ -49,4 +52,14 @@ const sendOrderConfirmationEmail = async ({ user, order }) => {
   return info;
 };
 
-module.exports = { sendOrderConfirmationEmail };
+const queueOrderConfirmationEmail = ({ user, order }) => {
+  setImmediate(async () => {
+    try {
+      await sendOrderConfirmationEmail({ user, order });
+    } catch (error) {
+      console.error("Order confirmation email failed:", error);
+    }
+  });
+};
+
+module.exports = { sendOrderConfirmationEmail, queueOrderConfirmationEmail };

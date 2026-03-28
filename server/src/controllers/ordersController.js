@@ -1,7 +1,7 @@
 const { z } = require("zod");
 const { prisma } = require("../lib/prisma");
 const { asyncHandler } = require("../middleware/asyncHandler");
-const { sendOrderConfirmationEmail } = require("../utils/email");
+const { queueOrderConfirmationEmail } = require("../utils/email");
 const { decimalToNumber, serializeOrder } = require("../utils/serialize");
 
 const checkoutSchema = z.object({
@@ -169,12 +169,13 @@ const createOrder = asyncHandler(async (req, res) => {
     return createdOrder;
   });
 
-  await sendOrderConfirmationEmail({
-    user: req.user,
-    order,
-  });
+  const serializedOrder = serializeOrder(order);
+  res.status(201).json(serializedOrder);
 
-  res.status(201).json(serializeOrder(order));
+  queueOrderConfirmationEmail({
+    user: req.user,
+    order: serializedOrder,
+  });
 });
 
 module.exports = { getOrders, getOrderById, createOrder };
